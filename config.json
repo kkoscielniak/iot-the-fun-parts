@@ -1,0 +1,19 @@
+{
+  "bridge": {
+    "name": "Homebridge",
+    "username": "CC:22:3D:E3:CE:30",
+    "port": 51826,
+    "pin": "031-45-154"
+  },
+  "description": "IoT demo",
+  "accessories": [
+    {
+      "accessory": "SimpleHttpSwitch",
+      "name": "Lamp",
+      "url": "http://127.0.0.1:3000/api/robots/lamp/devices/relay/commands/toggle",
+      "default_state_off": true,
+      "sendimmediately": "",
+      "http_method": "GET"
+    }
+  ]
+}
